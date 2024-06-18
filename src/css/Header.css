@@ -1,0 +1,338 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.header img {
+  margin: 15px;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+margin-left: -700px;
+text-decoration: none;
+}
+
+.content p {
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.content p:hover {
+  color: #ff486c;
+}
+.login{
+  text-decoration: none;
+}
+.content p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff486c;
+  transition: width 0.3s;
+}
+
+.content p:hover::after {
+  width: 100%;
+  text-decoration: none;
+}
+
+.account {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.fa-solid {
+  margin-right: 10px;
+}
+
+/* slider css use here */
+
+
+.account-slider {
+  position: fixed;
+  top: 0;
+  right: -520px;
+  width: 500px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.account-slider.open {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #333;
+  background-color: rgb(107, 238, 238);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.user-email {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.account-slider > div:first-of-type {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.account-slider > div:nth-of-type(3) button {
+  background-color: #ff486c;
+  color: #ffffff;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.account-slider > div:nth-of-type(3) button:hover {
+  background-color: #ff486c;
+}
+
+.account-slider > div:last-of-type {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
+
+.content-section {
+  margin-top: 20px;
+}
+
+.content-item {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.content-item:hover {
+  background-color: #ff486c;
+}
+
+.content-item i {
+  font-size: 20px;
+  color: #666;
+  margin-right: 10px;
+}
+
+.content-item p  {
+  flex: 1;
+  font-size: 25px;
+  color: #333;
+  margin: 0;
+
+
+}
+
+.content-item i.fa-arrow-right {
+  font-size: 16px;
+  color: #333;
+}
+
+.slider-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.first-para {
+  font-size: 26px;
+  color: black;
+  margin: 0;
+  margin-bottom: 10px; 
+  float:left;
+  margin-left: -198px;
+}
+
+.second-para {
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: -112px;
+
+}
+
+.activate-btn {
+  align-self: flex-end; 
+  background-color: #ff486c;
+  color: #ffffff;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.activate-btn:hover {
+  background-color: #ff486c;
+}
+
+.logout-button {
+  margin-top: auto;
+}
+
+.logout-button button {
+
+
+  width: 100%;
+  color: black;
+  border: none;
+  border-radius: 18px ;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ border: 2px solid #ff486c;
+  
+}
+
+.logout-button button:hover {
+  background-color: #ff486c;
+}
+
+
+
+.icon-container .icon-round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px; 
+  background-color: #f0f0f0; 
+  border-radius: 50%;
+}
+
+
+
+.contact-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left; 
+ 
+}
+
+
+.contact-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333; 
+}
+
+
+.contact-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form label {
+margin-bottom: -5px;
+ margin-left: -320px;
+  font-weight: bold;
+  color: #333; 
+  float: inline-end;
+}
+
+.contact-form button {
+  background: #ff486c;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 400px;
+}
+
+.contact-form button:hover {
+  background: #d83a5c; 
+}
+.link-style {
+  text-decoration: none; /* Remove underline */
+}
+

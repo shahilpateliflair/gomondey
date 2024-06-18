@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  gap: 25px;
+}
+
+h2,
+h3,
+h1,
+p {
+  color: rgb(3, 3, 3);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: black;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+p {
+  font-weight: 300;
+  color: #a9c3b1;
+}
+
+.price {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  margin-left: 10px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.play-btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: aquamarine;
+}
+
+#downloadBtn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #ff486c;
+  color: #fff;
+  margin-left: -20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  max-width: 380px;
+  border-radius: 30px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.description-overlay {
+  padding: 50px 20px;
+  text-align: center;
+  color: #f5f5f5; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 1.5em;
+  font-weight: bold;
+
+
+}
+
+.movie-container {
+  width: 350px;
+
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.background-image {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.background-image h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.movie-image {
+  display: none;
+}
+
+.chosen-container {
+  display: flex;
+  gap: 10px;
+  margin-left: 0;
+}
+
+.chosen-container h3 {
+  margin: 0;
+}
+
+.chosen-container span {
+  margin: 0 5px;
+}
+
+.chosen-container button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.name {
+  background: linear-gradient(
+    to right,
+    rgba(25, 133, 141, 0.8),
+    rgba(195, 238, 6, 0.5)
+  );
+  font-size: 20px;
+}
+
+.change-button {
+  border: none;
+  color: #ff486c;
+}
+
+@media (max-width: 1000px) {
+  body {
+    transform: scale(0.8);
+  }
+
+  main {
+    margin-left: 50px;
+    max-width: 90%;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+}
+.container {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 100px;
+  margin: 0 ;
+}
+.arrow-prev{
+margin-left: 80px;
+}
+.arrow-next{
+  margin-right: 70px;
+  }
+.arrow {
+  cursor: pointer;
+  width: 50px;
+  box-shadow: 0 0 20px;
+  margin-bottom: 15px;
+}
+
+.arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 0 10px;
+}
+.category-name {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-left: 200px;
+  margin-top: 25px;
+}
+
+.category-name h4 {
+  margin: 0;
+}
+
+.category-name span {
+  margin-left: 10px;
+}
+
+.category-name button {
+  margin-left: auto;
+  color: #ff486c;
+}
+.subcategory-name {
+  text-align: left;
+  margin: 0;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+.description-overlay h2 {
+  color: rgb(250, 253, 248);
+  font-weight: bold;
+}

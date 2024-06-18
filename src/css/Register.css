@@ -1,0 +1,242 @@
+
+.login-container {
+    width: 800px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 600px;
+    margin-top: 150px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.secure-server {
+    display: flex;
+    align-items: center;
+    background-color: #20c997;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.secure-server i {
+    margin-right: 5px;
+}
+
+
+#progress-bar {
+    width: 100%;
+    height: 20px;
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: #20c997;
+}
+
+#progress-bar::-moz-progress-bar {
+    background-color: #20c997;
+}
+
+.percent {
+    font-size: 16px;
+    color: #6c757d;
+    float: inline-start;
+    color: #20c997;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.icon-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-size: 24px;
+    color: #6c757d;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-container > div:hover {
+    /* background-color: #ff486c; */
+    border-color: #ff486c; 
+    color: gray;
+    
+}
+
+.icon-container > div.selected {
+    background-color: #ff486c;
+    color: white;
+}
+
+.icon-round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #d6dad9;
+    width: 80px;
+    height: 80px;
+    color: #0c0d0e;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+}
+
+
+
+.register-content{
+ 
+    margin-top: 150px;
+    width: 800px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+
+.login-content h2 {
+    color: #20c997;
+    font-size: 28px;
+    margin-left: -250px;
+}
+
+.login-content p {
+    font-size: 18px;
+    color: #6c757d;
+    margin-left: -180px;
+}
+
+.login-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.form-group-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.form-group1 {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    color: #0c0d0e;
+}
+.login-content form label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.login-content form input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+border-color: #20c997;
+  
+}
+.login-content form input:hover {
+    border-radius: 2px solid pink;
+      background-color: white;
+  }
+  
+
+.login-content form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff486c;
+    color: white;
+    cursor: pointer;
+   
+    width: 400px;
+    border-radius: 16px;
+}
+
+.login-content form button:hover {
+    background-color: #ca7082;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 800px;
+    margin-left: -520px;
+    margin-top: 20px; 
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.checkbox-label input {
+    margin-right: -125px;
+    width: 18px; 
+    height: 18px;
+}
+
+.checkbox-label span {
+    line-height: 1.2; 
+}
